@@ -29,6 +29,7 @@ import weather from "@/assets/imgs/portfolio/weather.png";
 import management from "@/assets/imgs/portfolio/management.png";
 import powerOdd from "@/assets/imgs/portfolio/powerOdd.png";
 import openai from "@/assets/imgs/portfolio/openai.png";
+import prizebond from "@/assets/imgs/portfolio/prizebond.png";
 
 import fed from "@/assets/imgs/Others/FED.jpeg";
 import pwj from "@/assets/imgs/Others/PWJ.jpeg";
@@ -259,6 +260,16 @@ export const projects = [
     technologies: ["React", "Firebase", "Flex-box", "React-youtube"],
     liveUrl: "https://netflix-snk.web.app/",
     repoUrl: "https://github.com/shounaksarker/Netflix-clone",
+  },
+  {
+    id: "project4.5",
+    title: "Prizebond Checker",
+    description:
+      "Prizebond Checker is a simple and fast web app that helps users in Bangladesh check their prize bond results instantly by entering bond numbers and selecting draw dates.",
+    image: prizebond,
+    technologies: ["React", "React-router", "Bootstrap"],
+    liveUrl: "https://prizebondbd.vercel.app/",
+    repoUrl: "https://github.com/shounaksarker/prizebond-checker",
   },
   {
     id: "project5",

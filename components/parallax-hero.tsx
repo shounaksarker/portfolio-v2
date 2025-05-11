@@ -126,13 +126,13 @@ export default function ParallaxHero() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.9 }}
           >
-            <Link href="https://github.com/shounak" target="_blank" rel="noopener noreferrer">
+            <Link href="https://github.com/shounaksarker" target="_blank" rel="noopener noreferrer">
               <Button className="gap-2 btn-gradient">
                 <Github size={18} className="relative z-10" />
                 <span className="relative z-10">GitHub</span>
               </Button>
             </Link>
-            <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+            <Link href="https://drive.google.com/file/d/1BIsTvUnUPIuJqoU2MQ7OUJEHDj-KsVev/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
               <Button variant="outline" className="gap-2 btn-hover border-primary">
                 <FileText size={18} className="relative z-10" />
                 <span className="relative z-10">Resume</span>
