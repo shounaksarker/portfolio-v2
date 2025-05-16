@@ -4,10 +4,10 @@ import SocialLinks from "@/components/social-links";
 
 const FooterSection = () => {
   return (
-    <footer className="py-6 bg-gradient-to-r from-primary/90 to-tertiary/90 text-white relative overflow-hidden">
+    <footer className="py-6 bg-gradient-to-r from-primary/90 to-secondary/90 text-white relative overflow-hidden">
       <div className="container px-4 mx-auto relative z-10">
-        <div className="flex items-center justify-between">
-          <Link href="/" className="text-3xl font-boldtext-gradient-light">
+        <div className="flex flex-col gap-y-3 md:gap-y-0 md:flex-row items-center justify-between">
+          <Link href="/" className="text-xl md:text-3xl font-bold text-gradient-light">
             Shounak
           </Link>
           <SocialLinks />

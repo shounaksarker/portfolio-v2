@@ -77,7 +77,7 @@
 
 .btn-gradient::before {
   content: "";
-  @apply absolute inset-0 bg-gradient-to-r from-primary to-tertiary opacity-0 transition-opacity duration-300;
+  @apply absolute inset-0 bg-gradient-to-r from-primary to-secondary opacity-0 transition-opacity duration-300;
 }
 
 .btn-gradient:hover::before {

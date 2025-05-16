@@ -39,7 +39,7 @@ export default function InteractiveSkills() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            onClick={() => setActiveSkill(null)}
+            // onClick={() => setActiveSkill(null)}
           >
             <motion.div
               className="bg-white dark:bg-gray-900 rounded-2xl shadow-xl p-6 max-w-xl w-full relative z-50"
@@ -124,8 +124,8 @@ export default function InteractiveSkills() {
                     boxShadow:
                       "0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
                   }}
-                  className="skill-card cursor-pointer"
-                  onClick={() => setActiveSkill(skill.name)}
+                  className="skill-card"
+                  // onClick={() => setActiveSkill(skill.name)}
                 >
                   <div className="flex flex-col items-center relative">
                     <div

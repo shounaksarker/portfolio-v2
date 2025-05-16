@@ -161,7 +161,7 @@ const ContactSection = ({ contactRef }: any) => {
                       type="text"
                       value={formData.user_sub}
                       onChange={handleFormChange}
-                      placeholder="your.email@example.com"
+                      placeholder="Your subject"
                       className="input-styled"
                     />
                   </motion.div>

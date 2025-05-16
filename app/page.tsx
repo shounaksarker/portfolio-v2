@@ -9,7 +9,6 @@ import { useTheme } from "next-themes"
 import { Sun, Moon } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import ParallaxHero from "@/components/parallax-hero"
-import SocialLinks from "@/components/social-links"
 import MouseFollower from "@/components/mouse-follower"
 import ScrollProgress from "@/components/scroll-progress"
 import AboutSection from "@/components/sections/AboutSection"
@@ -67,6 +66,9 @@ export default function Home() {
               <button onClick={() => scrollToSection(skillsRef)} className="nav-link">
                 Skills
               </button>
+              <Link href='/about' className="nav-link">
+                Experience
+              </Link>
               <button onClick={() => scrollToSection(projectsRef)} className="nav-link">
                 Projects
               </button>

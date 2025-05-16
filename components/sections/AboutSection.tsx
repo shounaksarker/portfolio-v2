@@ -2,10 +2,10 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
 import propic from "@/assets/imgs/Others/snk-wht.png";
+import { FastForward } from "lucide-react";
 
 const AboutSection = ({ aboutRef }: any) => {
   return (
@@ -65,16 +65,30 @@ const AboutSection = ({ aboutRef }: any) => {
                       large-scale projects, I enjoy the challenge of turning
                       complex ideas into user-friendly digital experiences.
                     </p>
-                    <div className="mt-8">
+                    <div className="mt-12">
                       <Link href="/about">
-                        <Button
-                          variant="outline"
-                          className="w-full btn-hover border-primary"
+                        <motion.button
+                          whileHover={{
+                            scale: 1.05,
+                            boxShadow: "0 0 25px rgba(99,102,241,0.6)",
+                          }}
+                          whileTap={{ scale: 0.95 }}
+                          className="relative w-full overflow-hidden rounded-lg bg-gradient-to-r from-primary/90 via-black to-secondary px-6 py-3 text-white font-bold shadow-lg transition-all duration-300 ease-in-out group"
                         >
-                          <span className="relative z-10">
+                          <span className="flex items-center justify-center gap-3 z-10 relative">
                             Learn more about my experience
+                            <motion.span
+                              className="inline-block"
+                              initial={{ x: 0 }}
+                              animate={{ x: [0, 5, 0] }}
+                              transition={{ repeat: Infinity, duration: 1.5 }}
+                            >
+                              <FastForward />
+                            </motion.span>
                           </span>
-                        </Button>
+
+                          <span className="absolute inset-0 z-0 opacity-0 group-hover:opacity-100 transition duration-1000 blur-sm bg-gradient-to-l from-black via-primary/70 to-secondary"></span>
+                        </motion.button>
                       </Link>
                     </div>
                   </motion.div>
